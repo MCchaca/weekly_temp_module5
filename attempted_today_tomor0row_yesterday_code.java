@@ -35,7 +35,7 @@ public class WeeklyTemperature {
             if (input1.equals("exit")) {
                 System.out.println("Goodbye!");
                 break;
-            }
+            } //only two main loop possibilites, everything else can else
             if (input1.equals("yesterday")) {  
                 int yesterdayIndex = (todayIndex - 1 + 7) % 7;
                 System.out.printf("The temperature yesterday (%s) was: %.2f°C\n", weekDays[yesterdayIndex], temperatures.get(yesterdayIndex));
